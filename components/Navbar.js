@@ -5,7 +5,7 @@ const Navbar = ({ session }) => {
   return (
     <div className="text-cinza-claro flex justify-between items-center py-8 px-12">
       <div>
-        <p className="text-2xl font-medium">Adrenargy</p>
+        <p className="text-2xl font-medium text-laranja-opaco">Adrenargy</p>
       </div>
       {session?.user ? (
         <ul className="flex items-center">
@@ -22,7 +22,7 @@ const Navbar = ({ session }) => {
 
           <Link href="/create">
             <button className="border border-solid border-laranja-opaco bg-transparent text-cinza-claro py-2 px-8 rounded-radius-customizado cursor-pointer transition-all duration-300 ease-in-out mr-6">
-              Create New Workout
+              Criar Novo Treino
             </button>
           </Link>
         </ul>
@@ -35,7 +35,7 @@ const Navbar = ({ session }) => {
           </Link>
           <Link href="/signup">
             <li className="border border-solid border-laranja-opaco bg-transparent text-cinza-claro py-2 px-8 rounded-radius-customizado cursor-pointer transition-all duration-300 ease-in-out mr-6">
-              Signup
+              Inscrever-se
             </li>
           </Link>
         </ul>
