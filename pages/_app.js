@@ -1,7 +1,27 @@
-import '../styles/globals.css'
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import "../styles/globals.css";
+import { supabase } from "../utils/supabase";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const [session, setSession] = useState(null);
+
+  useEffect(() => {
+    setSession(supabase.auth.session());
+    supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+  }, []);
+
+  return (
+    <div>
+      <Navbar session={session} />
+      <Component {...pageProps} session={session} />
+      <Footer />
+    </div>
+  );
 }
 
-export default MyApp
+export default MyApp;
