@@ -1,10 +1,15 @@
 # Projeto Aplicativo de Treinos com Supabase
 
-### Tecnologias utilizadas no projeto:  
--Next.js  
--Supabase  
--TailwindCSS  
+## Objetivo do projeto:
+- Praticar algumas tecnologias estudadas recentemente
 
-### Sobre:   
--Aplicativo de rotinas de treino, com autenticação de usuário e banco de dados fornecendo as rotinas cadastradas pelo usuário.   
--O banco de dados e a autenticação são providas pelo Supabase  
+## O que o projeto faz:
+- É um site para criação de rotinas de treino, com um sistema de login e banco de dados contendo os treinos salvos pelo usuário.
+
+## Linguagens/frameworks:
+- Next.js  
+- React
+- TailwindCSS 
+
+## Serviçoes utilizados: 
+- Supabase 
